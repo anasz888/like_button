@@ -19,8 +19,8 @@ double clamp(double value, double low, double high) {
 }
 
 Widget defaultWidgetBuilder(bool isLiked, double size) {
-  return Icon(
-    Icons.favorite,
+  return IconButton(
+      icon: Image.asset(path),
     color: isLiked ? Colors.pinkAccent : Colors.grey,
     size: size,
   );
